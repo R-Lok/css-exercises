@@ -8,7 +8,7 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-
+  justify-content: space-between
 }
 
 .header {
@@ -17,12 +17,11 @@ body {
   padding: 15px;
 }
 
-.content{ 
+.left-links,.right-links{
+  margin: 0px;
   display: flex;
-  flex-direction: column;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
+  gap: 15px;
+  padding: 0px;
 }
 
 
@@ -55,10 +54,6 @@ input {
 
 ul {
   list-style-type: none;
-  display: flex;
-  margin: 0px;
-  padding: 0px;
-  gap: 10px;
 }
 
 a{
