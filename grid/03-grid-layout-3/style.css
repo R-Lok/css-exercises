@@ -5,6 +5,13 @@
 
 .container {
   text-align: center;
+  display: grid;
+  gap: 4px;
+  grid-template: 100px  50px auto fit-content/ 1fr 4fr;
+  grid-template-areas: "header header"
+                       "sidebar nav"
+                       "sidebar article"
+                       "footer footer";
 }
 
 .container div {
@@ -17,15 +24,24 @@
 
 .header {
   background-color: #393f4d;
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 3fr 7fr;
 }
 
 .logo {
+  place-self: center start;
 }
 
 .menu {
+  align-self: center;
 }
 
 .menu ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  align-items: center;
 }
 
 .menu ul,
