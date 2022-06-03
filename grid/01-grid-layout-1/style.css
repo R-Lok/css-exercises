@@ -10,11 +10,11 @@ body, html {
   box-sizing: border-box;
   display: grid;
   gap: 15px;
-  grid-template: 100px 100px 500px 100px / 300px 900px;
-  grid-template-areas: "head head"
-                       "sidebar nav"
-                       "sidebar article"
-                       "footer footer";
+  grid-template: "head head" 100px
+                 "sidebar nav" 100px
+                 "sidebar article" 500px
+                 "footer footer" 100px
+                  / 300px 900px;
 }
 
 .container div {
